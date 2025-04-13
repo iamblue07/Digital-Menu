@@ -39,6 +39,19 @@ const Cart: React.FC = () => {
     alert('Order placed successfully!')
   }
 
+  const calculateSubtotal = () => {
+    return cart.reduce(
+      (total, item) => total + item.product.price * item.quantity,
+      0
+    )
+  }
+
+  const calculateTotal = () => {
+    const subtotal = calculateSubtotal()
+    const taxRate = 0.1
+    return subtotal + subtotal * taxRate
+  }
+
   return (
     <div className="CartPage">
       <h1 className="CartTitle">Your Cart</h1>
@@ -75,6 +88,14 @@ const Cart: React.FC = () => {
               </div>
             </div>
           ))}
+          <div className="CartSummary">
+            <p className="Subtotal">
+              Subtotal: ${calculateSubtotal().toFixed(2)}
+            </p>
+            <p className="Total">
+              Total (incl. tax): ${calculateTotal().toFixed(2)}
+            </p>
+          </div>
         </div>
       )}
       {cart.length > 0 && (
