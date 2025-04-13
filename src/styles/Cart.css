@@ -1,0 +1,76 @@
+.CartPage {
+  background-color: #1a1a1a;
+  color: #f15a29;
+  min-height: 100vh;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.CartTitle {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.EmptyCart {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.CartItems {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.CartItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.CartItemDetails {
+  flex: 1;
+}
+
+.ProductName {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.ProductPrice,
+.ProductQuantity {
+  margin: 5px 0;
+}
+
+.CartItemActions {
+  display: flex;
+  gap: 10px;
+}
+
+.ActionButton,
+.RemoveButton,
+.PlaceOrderButton {
+  background-color: #f15a29;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.ActionButton:hover,
+.RemoveButton:hover,
+.PlaceOrderButton:hover {
+  background-color: #d14e24;
+}
+
+.PlaceOrderButton {
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+}

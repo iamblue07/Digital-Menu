@@ -1,0 +1,31 @@
+.navbarContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(26, 26, 26);
+  padding: 10px 20px;
+}
+
+.logo {
+  height: 50px;
+}
+
+.navLinks {
+  display: flex;
+  gap: 20px;
+}
+
+.navLink {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.navLink:hover {
+  color: rgb(241, 90, 41);
+}
+
+.active {
+  color: rgb(241, 90, 41);
+}

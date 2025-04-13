@@ -1,0 +1,56 @@
+.MenuOrganizer__filter-wrapper {
+  padding: 1rem;
+  max-width: 300px;
+  background-color: #333;
+  border: 1px solid #e5e5e5;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.MenuOrganizer__heading {
+
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: white;
+}
+
+.MenuOrganizer__filter-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.MenuOrganizer__filter-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+}
+
+.MenuOrganizer__checkbox {
+  width: 16px;
+  height: 16px;
+  accent-color: rgb(241, 90, 41);
+}
+
+.MenuOrganizer__label {
+  user-select: none;
+}
+
+@media (max-width: 600px) {
+  .MenuOrganizer__filter-wrapper {
+    max-width: 100%;
+    padding: 0.75rem;
+  }
+
+  .MenuOrganizer__heading {
+    font-size: 1.125rem;
+  }
+
+  .MenuOrganizer__label {
+    font-size: 0.95rem;
+  }
+}
