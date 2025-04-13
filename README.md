@@ -1,114 +1,70 @@
 # 🍽️ Digital Menu - Expressoft
 
-This project is a simplified **Digital Menu App** built with **ReactJS**. It's meant to simulate a food ordering interface for a restaurant. This version is provided as a **starter template** for candidates undergoing front-end technical evaluation.
+This project is a simplified **Digital Menu App** built with **ReactJS**. It's meant to simulate a food ordering interface for a restaurant.
 
 ---
-
-## 🚀 Tech Stack
-
-- [Vite](https://vitejs.dev)
-- [ReactJS](https://reactjs.org)
-- [TypeScript](https://www.typescriptlang.org)
-- [Tailwindcss](https://tailwindcss.com)
-- [Eslint](https://eslint.org)
-- [Prettier](https://prettier.io)
-
+npm install
+npm run dev
 ---
 
-## 🧾 Dummy Data Structure
 
-The menu is organized by categories (Pizza, Burgers, Drinks) with nested products, each having:
-- `id` (GUID)
-- `name`
-- `description`
-- `price`
-- `available`
+## Completed Assignment Tasks
 
-You can find this in `src/data/menuData.js`
-
----
-
-## 🧪 Assignment Tasks (4 hours max)
-
-> You should use clean, reusable components and demonstrate best practices in React. Feel free to use any component libraries or utility hooks if needed.
-
-### ✅ Must Have (Core Tasks)
-
-1. **Menu Display by Category**
-   Render the categories and list products beneath each one.
+1. **Menu Display by Category**: Rendered the categories and list products beneath each one.
 
 2. **Product Card**
-   Each product should show:
+   Each product is showing:
    - Name
    - Description
    - Price
-   - Availability indicator (e.g., green/red dot or “Not available” badge)
-
-3. **Filter by Category**
-   Add buttons or a dropdown to filter products shown by category.
+   - Availability indicator (“Not available” badge)
+    
+3. **Filter by Category** Added checkbox filters products shown by category.
 
 4. **Toggle Product Availability**
-   Add a toggle (e.g., a switch or checkbox) to simulate changing product availability. This should only affect the frontend state.
+   Added a toggle to visualize only available products.
 
 5. **"Add to Order" Button**
-   Let users add available products to a simulated “order cart”. Show a summary with:
+   Users can add available products to a simulated “order cart”. Also added a Cart page showing a summary with:
    - Product name
    - Quantity
    - Subtotal
    - Total price
 
-6. **Make a welcoming home page**
-   Create a home page where you can change language (optional) and start order navigating
-   to menu screen, be creative.
+6. **A welcoming home page**
+   Created a home page
 
 ---
 
-### 🧠 Bonus (Optional If Time Permits)
+Completed Bonus assignment tasks:
 
-- **Search bar** to filter products by name
-- **Sort dropdown** (e.g., sort by price ascending/descending)
-- **Responsive layout** for mobile/tablet
+- **Search bar**: Added a search bar to filter products by name
+- **Sort dropdown** Added a sort dropdown to filter by price, increasing or decreasing
+- **Responsive layout** The web app has a responsive layout, allowing mobile users to use the app 
 - **Modal** for viewing full product details
 
 ---
 
-## 🧱 Folder Structure (Suggested)
+### Key Folders and Files
 
-```
-src/
-├── components/
-│   ├── ProductCard.tsx
-│   ├── CategoryFilter.tsx
-│   └── CartSummary.tsx
-├── data/
-│   └── menuData.ts
-├── pages/
-│   ├── Menu.tsx
-│   └── Home.tsx
-└── App.tsx
-```
+#### `src/components/`
+This folder contains reusable React components.
 
----
+- **`menuitem/`**: Contains the `MenuItem` component and its associated styles.
+  - `menuitem.tsx`
+  - `menuitem.css`
 
-## ▶️ Getting Started
+#### `src/data/`
 
-npm install
-npm run dev
+- `cartData.tsx`
+- `menuData.tsx`
 
----
+#### `src/pages/`
+This folder contains the main pages of the application.
 
-## 📩 Submission
+- `Menu.tsx`
+- `Home.tsx`
+- `Cart.tsx`
 
-Please provide:
-- A link to a public GitHub repo
-- Any notes about what was completed, skipped, or added extra
-
----
-
-## 📘 Notes
-
-- Don’t worry about API or backend – everything is in local state.
-- Use your own judgment for component breakdown and UI styling.
-- Keep it modular, readable, and maintainable.
-
-Good luck! 🚀
+#### `src/styles/`
+This folder contains global and page-specific CSS files.
